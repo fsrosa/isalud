@@ -1,0 +1,57 @@
+.card {
+    &Container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width: 1000px) {
+            flex-direction: column;
+        }
+    }
+    &PictureContainer {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        display: grid;
+        margin-right: 24px;
+        &:hover {
+            opacity: 0.95;
+            transition: 0.2s;
+        }
+        @media(max-width: 1000px) {
+            margin: 1rem 0;
+            width: 90vw;
+        }
+    }
+    &Pic {
+        width: 400px;
+        height: 300px;
+        border-radius: 4px;
+        object-fit: cover;
+        cursor: pointer;
+        @media(max-width: 1000px) {
+            width: 100%;
+        }
+    }
+    &TextContainer {
+        display: flex;
+        flex-flow: column wrap;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+            transition: 0.2s;
+        }
+        @media(max-width: 1000px) {
+            width: 90%;
+            text-align: center;
+        }
+    }
+    &Title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    &Headline {
+        font-size: 12px;
+    }
+}

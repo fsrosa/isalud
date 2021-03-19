@@ -1,0 +1,124 @@
+.main {
+    background-color: #eee;
+    &Container {
+        width: 100vw;
+    }
+    &Wrapper {
+        margin: 0 auto;
+        @media (min-width: 1280px) {
+            max-width: 960px;
+            padding: 0 12px;
+        }
+        @media(max-width: 1000px) {
+            width: 80%;
+        }
+    }
+}
+
+.post {
+    &Category {
+        color: #003399;
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 36px 0 0 0;
+    }
+    &CategoryContainer {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    &Title {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &Sub {
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        &>span {
+            font-weight: 800;
+            color: #003399;
+        }
+    }
+    &SubContainer {
+        display: grid;
+        place-items: center;
+        margin-bottom: 1.4rem;
+    }
+    &PictureContainer {
+        display: grid;
+        place-content: center;
+        margin: 2rem 0;
+        max-height: 300;
+    }
+    &Picture {
+        border-radius: 0.5rem;
+    }
+    &Post {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    &Content {
+        width: 100%;
+        & h2,
+        h3 {
+            font-weight: 800;
+            margin: 1.2rem 0;
+        }
+        & img {
+            max-width: 100%;
+            object-fit: none;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+        }
+        & figure {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        & p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        & ul {
+            margin: 0 2.5rem;
+            & li {
+                margin: 0.75rem 0;
+            }
+        }
+        & figcaption {
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+        & a {
+            color: #003399 !important;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        & span {
+            color: #000 !important;
+        }
+    }
+    &BibliographyContainer {
+        margin: 18px 0;
+        &>h2 {
+            margin-bottom: 8px;
+        }
+    }
+    &CategoriesContainer {
+        margin: 18px 0;
+        &>h2 {
+            margin-bottom: 8px;
+        }
+        &>span {
+            padding: 3px 6px;
+            background-color: aquamarine;
+            margin-right: 8px;
+            border-radius: 8px;
+        }
+    }
+}

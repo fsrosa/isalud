@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #BBB;
+    &Buttons {
+        &>button {
+            font-family: Inter, sans-serif;
+            font-weight: 800;
+            border: none;
+            background-color: #003399;
+            color: #eee;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            border-radius: 3px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                transition: 0.2s;
+            }
+        }
+    }
+}

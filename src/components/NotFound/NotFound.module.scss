@@ -1,0 +1,22 @@
+.container {
+    width: 960px;
+    margin: 2rem 0;
+    @media(max-width: 1000px) {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &Wrapper {
+        display: grid;
+        place-content: center;
+        @media(max-width: 1000px) {
+            width: 80%;
+        }
+    }
+    &>img {
+        align-self: center;
+    }
+}
